@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project RaptatBaseProject">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.workspace" value="C:/Users/gtony/Documents/EclipseWorkspaces/ProjectSpecificWorkspaces/EclipseRaptatBaseProject"/>
+    <property name="dir.jarfile" value="C:/Users/gtony/OneDrive/Desktop"/>
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/SwingConsoleThesaurusRunnable_210503_v01.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="src.main.gov.va.vha09.grecc.raptat.gg.candidates.Thesaurus"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/.p2/pool/plugins/org.junit_4.13.0.v20200204-1500.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/.p2/pool/plugins/org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/junit-4.8.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/knowtator1.9.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/looks-2.0.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/protege-core.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/ScrollableBar.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/commons-lang-2.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/jdom.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/xercesImpl-2.8.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/jaxb-api-2.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/ant.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/nekohtml-1.9.14.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/tika-core-0.7.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/opennlp-maxent-3.0.2-incubating.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/opennlp-tools-1.5.2-incubating.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/opennlp-uima-1.5.2-incubating.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/quaqua.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/uima-core.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/uima-cpe.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/uima-document-annotation.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/uima-tools.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/sptoolkit.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/stanford-corenlp-4.1.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/stanford-corenlp-4.1.0-models.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/commons-math3-3.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/guava-18.0.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/poi-3.12-20150511.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/poi-examples-3.12-20150511.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/poi-excelant-3.12-20150511.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/poi-ooxml-3.12-20150511.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/poi-ooxml-schemas-3.12-20150511.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/poi-scratchpad-3.12-20150511.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/commons-cli-1.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/commons-lang3-3.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/commons-text-1.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/hadoop-common-2.5.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/hbase-server-1.2.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/xmlunit-core-2.5.1.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/jeval.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/commons-io-2.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/commons-collections4-4.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/automaton-1.11.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/generex-1.0.2.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/lvg2014dist.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/mssql-jdbc-8.2.0.jre8.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/jcrfsuite-0.6.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/log4j-1.2.17.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/RaptatBaseProject/jars/Mallet2p0p8.jar"/>
+            <fileset dir="${dir.workspace}/SwingConsole/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/gtony/Documents/SubversionMatheny/branches/GlennWorkspace/Projects/CommonProjectJars/flatlaf-1.1.2.jar"/>
+        </jar>
+    </target>
+</project>
