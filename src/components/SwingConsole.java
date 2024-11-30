@@ -17,13 +17,14 @@ import javax.swing.GroupLayout.SequentialGroup;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import javax.swing.JTextPane;
 import javax.swing.LayoutStyle;
 import javax.swing.UIManager;
 import javax.swing.WindowConstants;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
+import com.formdev.flatlaf.FlatDarculaLaf;
 import com.formdev.flatlaf.FlatLightLaf;
 
 /**
@@ -49,7 +50,7 @@ public class SwingConsole {
     private JScrollPane jScrollPane1;
     private JLabel status;
 
-    private JTextPane textArea;
+    private JTextArea textArea;
     private Document textAreaDocument;
     final Color entryBackground;
 
@@ -125,7 +126,7 @@ public class SwingConsole {
      */
     private void initComponents() {
       this.entry = new JTextField();
-      this.textArea = new JTextPane();
+      this.textArea = new JTextArea();
       this.status = new JLabel();
       this.jLabel1 = new JLabel();
       this.textAreaDocument = this.textArea.getDocument();
@@ -133,10 +134,10 @@ public class SwingConsole {
       setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
       setTitle("SwingConsole");
 
-      // this.textArea.setColumns(20);
-      // this.textArea.setLineWrap(true);
-      // this.textArea.setRows(5);
-      // this.textArea.setWrapStyleWord(true);
+      this.textArea.setColumns(20);
+      this.textArea.setLineWrap(true);
+      this.textArea.setRows(5);
+      this.textArea.setWrapStyleWord(true);
       this.textArea.setEditable(false);
       this.jScrollPane1 = new JScrollPane(this.textArea);
 
@@ -288,9 +289,8 @@ public class SwingConsole {
      * "FlatDarculaLaF.install()," will create a light but modern look and feel.
      */
     try {
-      //UIManager.setLookAndFeel(new FlatLightLaf());
-      FlatLightLaf.setup();
-      //com.formdev.flatlaf.intellijthemes.FlatLightFlatIJTheme.installLafInfo();
+      UIManager.setLookAndFeel(new FlatLightLaf());
+      FlatDarculaLaf.install();
     } catch (Exception ex) {
       System.err.println("Failed to initialize LaF");
     }

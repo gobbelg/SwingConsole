@@ -33,7 +33,7 @@ public class SwingConsoleDemo {
     /*
      * You can add a message at the top of the console to begin
      */
-    sc.println("Welcome to the SMARTCOM-DIACON System!");
+    sc.println("Welcome to the SMARTCOM-DIACON System!\n");
 
 
     /*
